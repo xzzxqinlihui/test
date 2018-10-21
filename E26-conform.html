@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单综合案例：新建通讯录</title>
+</head>
+
+<body>
+    <h1>新建通讯录</h1>
+    <form method="GET" action="#">
+        <table border="1">
+            <!-- (tr>td*2)*7 快速生成 -->
+            <tr>
+                <td>姓名</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>电话</td>
+                <td><input type="text" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+                <td>电话类型</td>
+                <td>
+                    <input type="radio" name="r_phonetype" id="r_workphone">
+                    <label for="r_workphone">工作电话</label>
+                    <input type="radio" name="r_phonetype" id="r_homephone">
+                    <label for="r_homephone">家庭电话</label>
+                </td>
+            </tr>
+            <tr>
+                <td>公开给</td>
+                <td>
+                    <input type="checkbox" name="ck_friend" id="ck_friend">
+                    <label for="ck_friend">私人朋友</label>
+                    <input type="checkbox" name="ck_someone" id="ck_someone">
+                    <label for="ck_someone">陌生人</label>
+                </td>
+            </tr>
+            <tr>
+                <td>城市</td>
+                <td>
+                    <select name="city" id="city">
+                        <option value="1">北京</option>
+                        <option value="2">上海</option>
+                        <option value="3">天津</option>
+                        <option value="4">重庆</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td>
+                    <textarea name="more" id="more" cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="新建">
+                    <input type="reset" value="重置">
+                </td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
